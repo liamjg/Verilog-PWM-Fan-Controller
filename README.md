@@ -4,7 +4,7 @@ This project was based on an Artix-7 based Basys-3 FPGA board. The boards ADC is
 
 ## Schematic
 
-![Schematic](https://ibb.co/dRPa2G)
+![Schematic](https://image.ibb.co/cdN69w/Schematic_Fritzing_bb.png)
 
 ## Documentation
 
