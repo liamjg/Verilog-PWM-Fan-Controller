@@ -4,7 +4,7 @@ This project was based on an Artix-7 based Basys-3 FPGA board. The boards ADC is
 
 ## Schematic
 
-![Schematic](https://liveuwstout-my.sharepoint.com/personal/gallagherl0491_my_uwstout_edu/Documents/PWM%20Fan%20Control/Schematic-Fritzing_bb.png?slrid=32293d9e-10f3-4000-e0ca-1ff4ee0126c3)
+![Schematic](https://ibb.co/dRPa2G)
 
 ## Documentation
 
