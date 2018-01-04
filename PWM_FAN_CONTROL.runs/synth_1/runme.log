@@ -1,0 +1,426 @@
+
+*** Running vivado
+    with args -log Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Top_Module.tcl -notrace
+Command: synth_design -top Top_Module -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5132 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 316.641 ; gain = 74.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_Module' [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/new/Top_Module.v:3]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.runs/synth_1/.Xil/Vivado-5852-C-40B03410B4BE/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'xadc_wiz_0' (1#1) [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.runs/synth_1/.Xil/Vivado-5852-C-40B03410B4BE/realtime/xadc_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'XLXI_7' of module 'xadc_wiz_0' requires 22 connections, but only 17 given [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/new/Top_Module.v:44]
+INFO: [Synth 8-638] synthesizing module 'PWM_Counter' [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/imports/new/PWM_Counter.v:3]
+INFO: [Synth 8-256] done synthesizing module 'PWM_Counter' (2#1) [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/imports/new/PWM_Counter.v:3]
+INFO: [Synth 8-638] synthesizing module 'LCD_Module' [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/imports/new/lcd_module.v:3]
+	Parameter k bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'LCD_Module' (3#1) [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/imports/new/lcd_module.v:3]
+WARNING: [Synth 8-6014] Unused sequential element decimal_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/new/Top_Module.v:101]
+WARNING: [Synth 8-6014] Unused sequential element dig0_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/new/Top_Module.v:107]
+WARNING: [Synth 8-6014] Unused sequential element dig1_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/new/Top_Module.v:110]
+WARNING: [Synth 8-6014] Unused sequential element dig2_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/new/Top_Module.v:113]
+INFO: [Synth 8-256] done synthesizing module 'Top_Module' (4#1) [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/new/Top_Module.v:3]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[11]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[10]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[9]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[8]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[7]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[6]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[5]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[4]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[3]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[2]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[1]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 355.715 ; gain = 113.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 355.715 ; gain = 113.941
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.runs/synth_1/.Xil/Vivado-5852-C-40B03410B4BE/dcp3/xadc_wiz_0_in_context.xdc] for cell 'XLXI_7'
+Finished Parsing XDC File [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.runs/synth_1/.Xil/Vivado-5852-C-40B03410B4BE/dcp3/xadc_wiz_0_in_context.xdc] for cell 'XLXI_7'
+Parsing XDC File [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/constrs_1/imports/constraints/Basys3_Master.xdc:9]
+Finished Parsing XDC File [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/constrs_1/imports/constraints/Basys3_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Top_Module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 646.660 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 646.660 ; gain = 404.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 646.660 ; gain = 404.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for XLXI_7. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 646.660 ; gain = 404.887
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/imports/new/PWM_Counter.v:17]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/imports/new/lcd_module.v:164]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/new/Top_Module.v:98]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 646.660 ; gain = 404.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---XORs : 
+	                2 Bit    Wide XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Module 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module PWM_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module LCD_Module 
+Detailed RTL Component Info : 
++---XORs : 
+	                2 Bit    Wide XORs := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/imports/new/PWM_Counter.v:17]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/imports/new/lcd_module.v:164]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.srcs/sources_1/new/Top_Module.v:98]
+DSP Report: Generating DSP dig35, operation Mode is: (A:0x3d090)*B.
+DSP Report: operator dig35 is absorbed into DSP dig35.
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[11]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[10]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[9]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[8]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[7]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[6]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[5]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[4]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[3]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[2]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[1]
+WARNING: [Synth 8-3331] design PWM_Counter has unconnected port data[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lcd1/lcd_code_reg[8] )
+INFO: [Synth 8-3886] merging instance 'Address_in_reg[1]' (FDS) to 'Address_in_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Address_in_reg[2]' (FDS) to 'Address_in_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Address_in_reg[3]' (FDR) to 'Address_in_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Address_in_reg[4] )
+INFO: [Synth 8-3886] merging instance 'Address_in_reg[5]' (FDR) to 'Address_in_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Address_in_reg[6] )
+INFO: [Synth 8-3886] merging instance 'lcd1/lcd_full_reg[8]' (FD) to 'lcd1/lcd_code_reg[8]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\LED_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lcd1/lcd_code_reg[8] )
+INFO: [Synth 8-3886] merging instance 'lcd1/lcd_rw_reg' (FD) to 'lcd1/lcd_code_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lcd1/lcd_code_reg[8] )
+WARNING: [Synth 8-3332] Sequential element (lcd1/count_reg[25]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (lcd1/count_reg[26]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (lcd1/lcd_code_reg[8]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (LED_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (Address_in_reg[6]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (Address_in_reg[4]) is unused and will be removed from module Top_Module.
+INFO: [Synth 8-3886] merging instance 'dig6_reg[2]' (FDE) to 'dig6_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dig6_reg[1]' (FDE) to 'dig6_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dig6_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (dig6_reg[3]) is unused and will be removed from module Top_Module.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 646.660 ; gain = 404.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Top_Module  | (A:0x3d090)*B | 18     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 684.246 ; gain = 442.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 684.246 ; gain = 442.473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (lcd1/lcd_busy_reg) is unused and will be removed from module Top_Module.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 706.289 ; gain = 464.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin di_in[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin dwe_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin vauxp14
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin vauxn14
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin vauxp15
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin vauxn15
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module XLXI_7 has unconnected pin vn_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 706.289 ; gain = 464.516
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 706.289 ; gain = 464.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 706.289 ; gain = 464.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 706.289 ; gain = 464.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 706.289 ; gain = 464.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 706.289 ; gain = 464.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top_Module  | lcd1/lcd_rs_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | lcd1/lcd_e_reg  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Top_Module  | lcd1/lcd_5_reg  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |xadc_wiz_0 |     1|
+|2     |BUFG       |     1|
+|3     |CARRY4     |    28|
+|4     |DSP48E1    |     1|
+|5     |LUT1       |    53|
+|6     |LUT2       |    13|
+|7     |LUT3       |    31|
+|8     |LUT4       |    23|
+|9     |LUT5       |    56|
+|10    |LUT6       |    89|
+|11    |MUXF7      |     1|
+|12    |SRL16E     |     3|
+|13    |FDRE       |   117|
+|14    |FDSE       |     7|
+|15    |IBUF       |     6|
+|16    |OBUF       |    28|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |   483|
+|2     |  lcd1   |LCD_Module  |   112|
+|3     |  pwm1   |PWM_Counter |    68|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 706.289 ; gain = 464.516
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 23 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 706.289 ; gain = 173.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 706.289 ; gain = 464.516
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+34 Infos, 45 Warnings, 23 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 706.289 ; gain = 469.070
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.runs/synth_1/Top_Module.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 706.289 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 18 10:29:06 2017...

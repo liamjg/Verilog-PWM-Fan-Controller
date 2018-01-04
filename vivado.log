@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Jan  4 01:59:06 2018
+# Process ID: 10612
+# Current directory: C:/Users/Student/Desktop/PWM_FAN_CONTROL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13040 C:\Users\Student\Desktop\PWM_FAN_CONTROL\PWM_FAN_CONTROL.xpr
+# Log file: C:/Users/Student/Desktop/PWM_FAN_CONTROL/vivado.log
+# Journal file: C:/Users/Student/Desktop/PWM_FAN_CONTROL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:18 . Memory (MB): peak = 724.641 ; gain = 56.969
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  4 02:03:24 2018...

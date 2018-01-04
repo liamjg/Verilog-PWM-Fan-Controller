@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec 18 10:28:06 2017
+# Process ID: 5852
+# Current directory: C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.runs/synth_1
+# Command line: vivado.exe -log Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+# Log file: C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.runs/synth_1/Top_Module.vds
+# Journal file: C:/Users/Student/Desktop/PWM_FAN_CONTROL/PWM_FAN_CONTROL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Module.tcl -notrace
